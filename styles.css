@@ -1,0 +1,213 @@
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header-left {
+    flex: 1;
+    text-align: left;
+}
+
+.header-right {
+    flex: 1;
+    text-align: right;
+}
+
+button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    padding: 5%;
+}
+
+/* Product Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.grandparent {
+    display: flex;
+    flex-direction: column;  /* Stack parent divs vertically */
+    align-items: center;     /* Center parent divs horizontally */
+    gap: 10px;               /* Maintain space between parent divs */
+    padding: 2%;             /* Padding around the grandparent div */
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+.parent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2px;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.child {
+    flex: 1;
+    height: auto; /* Adjusts height dynamically based on content */
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Stack image, text, and button */
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.child img {
+    width: 100px; /* Adjust image size */
+    height: 100px;
+    object-fit: cover; /* Ensure images fit nicely */
+    border-radius: 5px;
+}
+
+.child p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.child button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.child button:hover {
+    background-color: #218838;
+}
+
+
+/* Shopping Cart */
+#cart {
+    background: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+}
+
+#cart li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-button {
+    text-align: center;
+    margin: 10px 10px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Aligns text and button vertically */
+    gap: 10px; /* Adds space between text and button */
+    margin-top: 10px; /* Optional spacing */
+}
+
+
+
+
+/* Cart Container */
+#cart-container {
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cart-items button:hover {
+    background-color: darkred;
+}
